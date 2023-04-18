@@ -1,0 +1,20 @@
+#Checar pacotes e dependencias produção e desenvolvimento;
+
+cat pyproject.toml
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1" - Biblioteca para testes;
+pytest-cov = "^4.0.0" - Biblioteca para cobertura de testes;
+blue = "^0.9.1" - Padrão de formato de código (PEP8);
+isort = "^5.12.0" - Ordernar imports
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.1.6" - Biblioteca de documentacao
+mkdocstrings = "^0.21.2" - Facilitador shortcurts
+mkdocstrings-python = "^0.9.0" - Documentacao especifico para python
+taskipy = "^1.10.4" - automacao de tarefas e comandos
+
+# Adicionar um pacote ou depencia 
+poetry add --group dev <package>
+
+
