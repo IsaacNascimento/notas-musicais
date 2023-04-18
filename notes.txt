@@ -17,4 +17,13 @@ taskipy = "^1.10.4" - automacao de tarefas e comandos
 # Adicionar um pacote ou depencia 
 poetry add --group dev <package>
 
+# Entrar no ambiente Virtual
+poetry shell # pshell
+
+# Criar docs
+mkdocs new .
+
+# Vizualizar serviço de documentação
+mkdocs serve
+
 
