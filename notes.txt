@@ -26,4 +26,24 @@ mkdocs new .
 # Vizualizar serviço de documentação
 mkdocs serve
 
+# Checar testes
+pytest
+
+# Checar formatação por blue
+blue --check .
+blue --check --diff .
+
+# Checar ordem de importaçoes
+isort --check .
+isort --check --diff .
+
+# Automatização de tasks 
+task lint (blue e isort)
+task docs (mkdocs)
+task test (pytest)
+task post_test (coverage)
+
+# Listagem de todos os comandos
+task -l
+
 
